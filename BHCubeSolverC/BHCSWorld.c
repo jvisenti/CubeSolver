@@ -284,15 +284,13 @@ void BHCSWorldSolveDancingLinks(BHDancingLinks *matrix, RVStack *solution, int n
         {
             *numSolutions = *numSolutions + 1;
             
-            printf("Solution %i\n", *numSolutions);
-            
-//            int i;
-//            for (i = 0 ; i < numPieces; i++)
-//            {
-//                BHCSRowInfo *rowInfo = (BHCSRowInfo *)RVStackPeekI(solution, i);
-//                printf("piece %i \tat (%i, %i, %i) rotation (%i, %i, %i)\n", rowInfo->pieceID, rowInfo->position.x, rowInfo->position.y, rowInfo->position.z, rowInfo->axisRotation.x, rowInfo->axisRotation.y, rowInfo->axisRotation.z);
-//            }
-//            printf("\n");
+            int i;
+            for (i = 0 ; i < numPieces; i++)
+            {
+                BHCSRowInfo *rowInfo = (BHCSRowInfo *)RVStackPeekI(solution, i);
+                printf("piece %i \tat (%i, %i, %i) rotation (%i, %i, %i)\n", rowInfo->pieceID, rowInfo->position.x, rowInfo->position.y, rowInfo->position.z, rowInfo->axisRotation.x, rowInfo->axisRotation.y, rowInfo->axisRotation.z);
+            }
+            printf("\n");
         }
         
         return;
