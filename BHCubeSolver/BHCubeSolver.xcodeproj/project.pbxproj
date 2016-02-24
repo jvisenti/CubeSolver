@@ -1,0 +1,544 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		D4AD34DC18C17C8A007BAD12 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D4AD34DB18C17C8A007BAD12 /* Cocoa.framework */; };
+		D4AD34E818C17C8A007BAD12 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = D4AD34E718C17C8A007BAD12 /* main.m */; };
+		D4AD354818C17F41007BAD12 /* GLKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D4AD354718C17F41007BAD12 /* GLKit.framework */; };
+		D4AD354A18C17F4B007BAD12 /* OpenGL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D4AD354918C17F4B007BAD12 /* OpenGL.framework */; };
+		D4AD355C18C18952007BAD12 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D4AD355B18C18952007BAD12 /* QuartzCore.framework */; };
+		D4AD356D18C18EC2007BAD12 /* BHCSPiece.m in Sources */ = {isa = PBXBuildFile; fileRef = D4AD356C18C18EC2007BAD12 /* BHCSPiece.m */; };
+		D4AD357C18C229A5007BAD12 /* BHCSCube.m in Sources */ = {isa = PBXBuildFile; fileRef = D4AD357718C229A5007BAD12 /* BHCSCube.m */; };
+		D4AD357D18C229A5007BAD12 /* BHCSModelNode.m in Sources */ = {isa = PBXBuildFile; fileRef = D4AD357918C229A5007BAD12 /* BHCSModelNode.m */; };
+		D4AD357E18C229A5007BAD12 /* BHCSScene.m in Sources */ = {isa = PBXBuildFile; fileRef = D4AD357B18C229A5007BAD12 /* BHCSScene.m */; };
+		D4AD358718C24A17007BAD12 /* BHCSWorld.m in Sources */ = {isa = PBXBuildFile; fileRef = D4AD358618C24A17007BAD12 /* BHCSWorld.m */; };
+		D4AD358A18C24A6A007BAD12 /* BHCSCubeArray.m in Sources */ = {isa = PBXBuildFile; fileRef = D4AD358918C24A6A007BAD12 /* BHCSCubeArray.m */; };
+		D4AD359018C267D1007BAD12 /* BHCSPieceNode.m in Sources */ = {isa = PBXBuildFile; fileRef = D4AD358F18C267D1007BAD12 /* BHCSPieceNode.m */; };
+		D4AD359318C27211007BAD12 /* BHCSWorldNode.m in Sources */ = {isa = PBXBuildFile; fileRef = D4AD359218C27211007BAD12 /* BHCSWorldNode.m */; };
+		D4AD35CA18C3AA55007BAD12 /* BHCSAlgorithmXMatrix.m in Sources */ = {isa = PBXBuildFile; fileRef = D4AD35C918C3AA55007BAD12 /* BHCSAlgorithmXMatrix.m */; };
+		D4AD35D318C3BF34007BAD12 /* BHCSAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = D4AD35CD18C3BF34007BAD12 /* BHCSAppDelegate.m */; };
+		D4AD35D418C3BF34007BAD12 /* BHCSView.m in Sources */ = {isa = PBXBuildFile; fileRef = D4AD35CF18C3BF34007BAD12 /* BHCSView.m */; };
+		D4AD35D918C3BF48007BAD12 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = D4AD35D818C3BF48007BAD12 /* MainMenu.xib */; };
+		D4AD35DA18C4E349007BAD12 /* lighting.fsh in Resources */ = {isa = PBXBuildFile; fileRef = D4AD35D118C3BF34007BAD12 /* lighting.fsh */; };
+		D4AD35DB18C4E349007BAD12 /* lighting.vsh in Resources */ = {isa = PBXBuildFile; fileRef = D4AD35D218C3BF34007BAD12 /* lighting.vsh */; };
+		D4AD35DE18C4E931007BAD12 /* BHCSPuzzleDocument.m in Sources */ = {isa = PBXBuildFile; fileRef = D4AD35DD18C4E931007BAD12 /* BHCSPuzzleDocument.m */; };
+		D4AD35E018C4EC9E007BAD12 /* BHCSPuzzleDocument.xib in Resources */ = {isa = PBXBuildFile; fileRef = D4AD35DF18C4EC9E007BAD12 /* BHCSPuzzleDocument.xib */; };
+		D4D4E32F1C7D30CA0050B3B2 /* BHGLAnimatedObject.m in Sources */ = {isa = PBXBuildFile; fileRef = D4D4E3091C7D30CA0050B3B2 /* BHGLAnimatedObject.m */; };
+		D4D4E3301C7D30CA0050B3B2 /* BHGLAnimation.m in Sources */ = {isa = PBXBuildFile; fileRef = D4D4E30B1C7D30CA0050B3B2 /* BHGLAnimation.m */; };
+		D4D4E3311C7D30CA0050B3B2 /* BHGLBasicAnimation.m in Sources */ = {isa = PBXBuildFile; fileRef = D4D4E30D1C7D30CA0050B3B2 /* BHGLBasicAnimation.m */; };
+		D4D4E3321C7D30CA0050B3B2 /* BHGLCamera.m in Sources */ = {isa = PBXBuildFile; fileRef = D4D4E30F1C7D30CA0050B3B2 /* BHGLCamera.m */; };
+		D4D4E3331C7D30CA0050B3B2 /* BHGLCUtils.c in Sources */ = {isa = PBXBuildFile; fileRef = D4D4E3101C7D30CA0050B3B2 /* BHGLCUtils.c */; };
+		D4D4E3341C7D30CA0050B3B2 /* BHGLKeyframeAnimation.m in Sources */ = {isa = PBXBuildFile; fileRef = D4D4E3131C7D30CA0050B3B2 /* BHGLKeyframeAnimation.m */; };
+		D4D4E3351C7D30CA0050B3B2 /* BHGLLight.m in Sources */ = {isa = PBXBuildFile; fileRef = D4D4E3151C7D30CA0050B3B2 /* BHGLLight.m */; };
+		D4D4E3361C7D30CA0050B3B2 /* BHGLMaterial.m in Sources */ = {isa = PBXBuildFile; fileRef = D4D4E3171C7D30CA0050B3B2 /* BHGLMaterial.m */; };
+		D4D4E3371C7D30CA0050B3B2 /* BHGLMesh.m in Sources */ = {isa = PBXBuildFile; fileRef = D4D4E31A1C7D30CA0050B3B2 /* BHGLMesh.m */; };
+		D4D4E3381C7D30CA0050B3B2 /* BHGLModelNode.m in Sources */ = {isa = PBXBuildFile; fileRef = D4D4E31C1C7D30CA0050B3B2 /* BHGLModelNode.m */; };
+		D4D4E3391C7D30CA0050B3B2 /* BHGLNode.m in Sources */ = {isa = PBXBuildFile; fileRef = D4D4E31E1C7D30CA0050B3B2 /* BHGLNode.m */; };
+		D4D4E33A1C7D30CA0050B3B2 /* BHGLProgram.m in Sources */ = {isa = PBXBuildFile; fileRef = D4D4E3201C7D30CA0050B3B2 /* BHGLProgram.m */; };
+		D4D4E33B1C7D30CA0050B3B2 /* BHGLScene.m in Sources */ = {isa = PBXBuildFile; fileRef = D4D4E3231C7D30CA0050B3B2 /* BHGLScene.m */; };
+		D4D4E33C1C7D30CA0050B3B2 /* BHGLTextNode.m in Sources */ = {isa = PBXBuildFile; fileRef = D4D4E3251C7D30CA0050B3B2 /* BHGLTextNode.m */; };
+		D4D4E33D1C7D30CA0050B3B2 /* BHGLTexture.m in Sources */ = {isa = PBXBuildFile; fileRef = D4D4E3271C7D30CA0050B3B2 /* BHGLTexture.m */; };
+		D4D4E33F1C7D30CA0050B3B2 /* BHGLView.m in Sources */ = {isa = PBXBuildFile; fileRef = D4D4E32E1C7D30CA0050B3B2 /* BHGLView.m */; };
+		D4ECD20318CE32990003317E /* BHDancingLinks.c in Sources */ = {isa = PBXBuildFile; fileRef = D4ECD20218CE32990003317E /* BHDancingLinks.c */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		D4AD34D818C17C8A007BAD12 /* BHCubeSolver.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BHCubeSolver.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		D4AD34DB18C17C8A007BAD12 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
+		D4AD34DE18C17C8A007BAD12 /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
+		D4AD34DF18C17C8A007BAD12 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		D4AD34E018C17C8A007BAD12 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		D4AD34E718C17C8A007BAD12 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		D4AD34E918C17C8A007BAD12 /* BHCubeSolver-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "BHCubeSolver-Prefix.pch"; sourceTree = "<group>"; };
+		D4AD34FA18C17C8A007BAD12 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		D4AD354718C17F41007BAD12 /* GLKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GLKit.framework; path = System/Library/Frameworks/GLKit.framework; sourceTree = SDKROOT; };
+		D4AD354918C17F4B007BAD12 /* OpenGL.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGL.framework; path = System/Library/Frameworks/OpenGL.framework; sourceTree = SDKROOT; };
+		D4AD355B18C18952007BAD12 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		D4AD356B18C18EC2007BAD12 /* BHCSPiece.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BHCSPiece.h; sourceTree = "<group>"; };
+		D4AD356C18C18EC2007BAD12 /* BHCSPiece.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BHCSPiece.m; sourceTree = "<group>"; };
+		D4AD357118C228C4007BAD12 /* BHCS.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BHCS.h; sourceTree = "<group>"; };
+		D4AD357618C229A4007BAD12 /* BHCSCube.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BHCSCube.h; sourceTree = "<group>"; };
+		D4AD357718C229A5007BAD12 /* BHCSCube.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BHCSCube.m; sourceTree = "<group>"; };
+		D4AD357818C229A5007BAD12 /* BHCSModelNode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BHCSModelNode.h; sourceTree = "<group>"; };
+		D4AD357918C229A5007BAD12 /* BHCSModelNode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BHCSModelNode.m; sourceTree = "<group>"; };
+		D4AD357A18C229A5007BAD12 /* BHCSScene.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BHCSScene.h; sourceTree = "<group>"; };
+		D4AD357B18C229A5007BAD12 /* BHCSScene.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BHCSScene.m; sourceTree = "<group>"; };
+		D4AD358518C24A17007BAD12 /* BHCSWorld.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BHCSWorld.h; sourceTree = "<group>"; };
+		D4AD358618C24A17007BAD12 /* BHCSWorld.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BHCSWorld.m; sourceTree = "<group>"; };
+		D4AD358818C24A6A007BAD12 /* BHCSCubeArray.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BHCSCubeArray.h; sourceTree = "<group>"; };
+		D4AD358918C24A6A007BAD12 /* BHCSCubeArray.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BHCSCubeArray.m; sourceTree = "<group>"; };
+		D4AD358E18C267D1007BAD12 /* BHCSPieceNode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BHCSPieceNode.h; sourceTree = "<group>"; };
+		D4AD358F18C267D1007BAD12 /* BHCSPieceNode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BHCSPieceNode.m; sourceTree = "<group>"; };
+		D4AD359118C27211007BAD12 /* BHCSWorldNode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BHCSWorldNode.h; sourceTree = "<group>"; };
+		D4AD359218C27211007BAD12 /* BHCSWorldNode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BHCSWorldNode.m; sourceTree = "<group>"; };
+		D4AD35C818C3AA55007BAD12 /* BHCSAlgorithmXMatrix.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BHCSAlgorithmXMatrix.h; sourceTree = "<group>"; };
+		D4AD35C918C3AA55007BAD12 /* BHCSAlgorithmXMatrix.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BHCSAlgorithmXMatrix.m; sourceTree = "<group>"; };
+		D4AD35CC18C3BF34007BAD12 /* BHCSAppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BHCSAppDelegate.h; sourceTree = "<group>"; };
+		D4AD35CD18C3BF34007BAD12 /* BHCSAppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BHCSAppDelegate.m; sourceTree = "<group>"; };
+		D4AD35CE18C3BF34007BAD12 /* BHCSView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BHCSView.h; sourceTree = "<group>"; };
+		D4AD35CF18C3BF34007BAD12 /* BHCSView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BHCSView.m; sourceTree = "<group>"; };
+		D4AD35D018C3BF34007BAD12 /* BHCubeSolver-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "BHCubeSolver-Info.plist"; sourceTree = "<group>"; };
+		D4AD35D118C3BF34007BAD12 /* lighting.fsh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; path = lighting.fsh; sourceTree = "<group>"; };
+		D4AD35D218C3BF34007BAD12 /* lighting.vsh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; path = lighting.vsh; sourceTree = "<group>"; };
+		D4AD35D818C3BF48007BAD12 /* MainMenu.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MainMenu.xib; sourceTree = "<group>"; };
+		D4AD35DC18C4E930007BAD12 /* BHCSPuzzleDocument.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BHCSPuzzleDocument.h; sourceTree = "<group>"; };
+		D4AD35DD18C4E931007BAD12 /* BHCSPuzzleDocument.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BHCSPuzzleDocument.m; sourceTree = "<group>"; };
+		D4AD35DF18C4EC9E007BAD12 /* BHCSPuzzleDocument.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BHCSPuzzleDocument.xib; sourceTree = "<group>"; };
+		D4D4E3071C7D30CA0050B3B2 /* BHGL.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BHGL.h; sourceTree = "<group>"; };
+		D4D4E3081C7D30CA0050B3B2 /* BHGLAnimatedObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BHGLAnimatedObject.h; sourceTree = "<group>"; };
+		D4D4E3091C7D30CA0050B3B2 /* BHGLAnimatedObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BHGLAnimatedObject.m; sourceTree = "<group>"; };
+		D4D4E30A1C7D30CA0050B3B2 /* BHGLAnimation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BHGLAnimation.h; sourceTree = "<group>"; };
+		D4D4E30B1C7D30CA0050B3B2 /* BHGLAnimation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BHGLAnimation.m; sourceTree = "<group>"; };
+		D4D4E30C1C7D30CA0050B3B2 /* BHGLBasicAnimation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BHGLBasicAnimation.h; sourceTree = "<group>"; };
+		D4D4E30D1C7D30CA0050B3B2 /* BHGLBasicAnimation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BHGLBasicAnimation.m; sourceTree = "<group>"; };
+		D4D4E30E1C7D30CA0050B3B2 /* BHGLCamera.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BHGLCamera.h; sourceTree = "<group>"; };
+		D4D4E30F1C7D30CA0050B3B2 /* BHGLCamera.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BHGLCamera.m; sourceTree = "<group>"; };
+		D4D4E3101C7D30CA0050B3B2 /* BHGLCUtils.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = BHGLCUtils.c; sourceTree = "<group>"; };
+		D4D4E3111C7D30CA0050B3B2 /* BHGLCUtils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BHGLCUtils.h; sourceTree = "<group>"; };
+		D4D4E3121C7D30CA0050B3B2 /* BHGLKeyframeAnimation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BHGLKeyframeAnimation.h; sourceTree = "<group>"; };
+		D4D4E3131C7D30CA0050B3B2 /* BHGLKeyframeAnimation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BHGLKeyframeAnimation.m; sourceTree = "<group>"; };
+		D4D4E3141C7D30CA0050B3B2 /* BHGLLight.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BHGLLight.h; sourceTree = "<group>"; };
+		D4D4E3151C7D30CA0050B3B2 /* BHGLLight.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BHGLLight.m; sourceTree = "<group>"; };
+		D4D4E3161C7D30CA0050B3B2 /* BHGLMaterial.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BHGLMaterial.h; sourceTree = "<group>"; };
+		D4D4E3171C7D30CA0050B3B2 /* BHGLMaterial.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BHGLMaterial.m; sourceTree = "<group>"; };
+		D4D4E3181C7D30CA0050B3B2 /* BHGLMath.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BHGLMath.h; sourceTree = "<group>"; };
+		D4D4E3191C7D30CA0050B3B2 /* BHGLMesh.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BHGLMesh.h; sourceTree = "<group>"; };
+		D4D4E31A1C7D30CA0050B3B2 /* BHGLMesh.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BHGLMesh.m; sourceTree = "<group>"; };
+		D4D4E31B1C7D30CA0050B3B2 /* BHGLModelNode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BHGLModelNode.h; sourceTree = "<group>"; };
+		D4D4E31C1C7D30CA0050B3B2 /* BHGLModelNode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BHGLModelNode.m; sourceTree = "<group>"; };
+		D4D4E31D1C7D30CA0050B3B2 /* BHGLNode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BHGLNode.h; sourceTree = "<group>"; };
+		D4D4E31E1C7D30CA0050B3B2 /* BHGLNode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BHGLNode.m; sourceTree = "<group>"; };
+		D4D4E31F1C7D30CA0050B3B2 /* BHGLProgram.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BHGLProgram.h; sourceTree = "<group>"; };
+		D4D4E3201C7D30CA0050B3B2 /* BHGLProgram.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BHGLProgram.m; sourceTree = "<group>"; };
+		D4D4E3211C7D30CA0050B3B2 /* BHGLRenderedObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BHGLRenderedObject.h; sourceTree = "<group>"; };
+		D4D4E3221C7D30CA0050B3B2 /* BHGLScene.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BHGLScene.h; sourceTree = "<group>"; };
+		D4D4E3231C7D30CA0050B3B2 /* BHGLScene.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BHGLScene.m; sourceTree = "<group>"; };
+		D4D4E3241C7D30CA0050B3B2 /* BHGLTextNode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BHGLTextNode.h; sourceTree = "<group>"; };
+		D4D4E3251C7D30CA0050B3B2 /* BHGLTextNode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BHGLTextNode.m; sourceTree = "<group>"; };
+		D4D4E3261C7D30CA0050B3B2 /* BHGLTexture.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BHGLTexture.h; sourceTree = "<group>"; };
+		D4D4E3271C7D30CA0050B3B2 /* BHGLTexture.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BHGLTexture.m; sourceTree = "<group>"; };
+		D4D4E3281C7D30CA0050B3B2 /* BHGLTypes.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BHGLTypes.h; sourceTree = "<group>"; };
+		D4D4E32D1C7D30CA0050B3B2 /* BHGLView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BHGLView.h; sourceTree = "<group>"; };
+		D4D4E32E1C7D30CA0050B3B2 /* BHGLView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BHGLView.m; sourceTree = "<group>"; };
+		D4ECD20118CE32900003317E /* BHDancingLinks.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BHDancingLinks.h; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.c; };
+		D4ECD20218CE32990003317E /* BHDancingLinks.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = BHDancingLinks.c; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.c; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		D4AD34D518C17C8A007BAD12 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D4AD355C18C18952007BAD12 /* QuartzCore.framework in Frameworks */,
+				D4AD354A18C17F4B007BAD12 /* OpenGL.framework in Frameworks */,
+				D4AD354818C17F41007BAD12 /* GLKit.framework in Frameworks */,
+				D4AD34DC18C17C8A007BAD12 /* Cocoa.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		D4AD34CF18C17C8A007BAD12 = {
+			isa = PBXGroup;
+			children = (
+				D4D4E3061C7D30CA0050B3B2 /* Classes */,
+				D4AD34E118C17C8A007BAD12 /* BHCubeSolver */,
+				D4AD34DA18C17C8A007BAD12 /* Frameworks */,
+				D4AD34D918C17C8A007BAD12 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		D4AD34D918C17C8A007BAD12 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				D4AD34D818C17C8A007BAD12 /* BHCubeSolver.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		D4AD34DA18C17C8A007BAD12 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				D4AD355B18C18952007BAD12 /* QuartzCore.framework */,
+				D4AD354918C17F4B007BAD12 /* OpenGL.framework */,
+				D4AD354718C17F41007BAD12 /* GLKit.framework */,
+				D4AD34DB18C17C8A007BAD12 /* Cocoa.framework */,
+				D4AD34FA18C17C8A007BAD12 /* XCTest.framework */,
+				D4AD34DD18C17C8A007BAD12 /* Other Frameworks */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		D4AD34DD18C17C8A007BAD12 /* Other Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				D4AD34DE18C17C8A007BAD12 /* AppKit.framework */,
+				D4AD34DF18C17C8A007BAD12 /* CoreData.framework */,
+				D4AD34E018C17C8A007BAD12 /* Foundation.framework */,
+			);
+			name = "Other Frameworks";
+			sourceTree = "<group>";
+		};
+		D4AD34E118C17C8A007BAD12 /* BHCubeSolver */ = {
+			isa = PBXGroup;
+			children = (
+				D4AD357518C229A4007BAD12 /* Nodes */,
+				D4AD356A18C18EA8007BAD12 /* Models */,
+				D4AD35CB18C3BF34007BAD12 /* OSX */,
+				D4AD357118C228C4007BAD12 /* BHCS.h */,
+				D4AD34E218C17C8A007BAD12 /* Supporting Files */,
+			);
+			path = BHCubeSolver;
+			sourceTree = "<group>";
+		};
+		D4AD34E218C17C8A007BAD12 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				D4AD34E718C17C8A007BAD12 /* main.m */,
+				D4AD34E918C17C8A007BAD12 /* BHCubeSolver-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		D4AD356A18C18EA8007BAD12 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				D4AD358818C24A6A007BAD12 /* BHCSCubeArray.h */,
+				D4AD358918C24A6A007BAD12 /* BHCSCubeArray.m */,
+				D4AD356B18C18EC2007BAD12 /* BHCSPiece.h */,
+				D4AD356C18C18EC2007BAD12 /* BHCSPiece.m */,
+				D4AD358518C24A17007BAD12 /* BHCSWorld.h */,
+				D4AD358618C24A17007BAD12 /* BHCSWorld.m */,
+				D4AD35C818C3AA55007BAD12 /* BHCSAlgorithmXMatrix.h */,
+				D4AD35C918C3AA55007BAD12 /* BHCSAlgorithmXMatrix.m */,
+				D4ECD20118CE32900003317E /* BHDancingLinks.h */,
+				D4ECD20218CE32990003317E /* BHDancingLinks.c */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		D4AD357518C229A4007BAD12 /* Nodes */ = {
+			isa = PBXGroup;
+			children = (
+				D4AD357618C229A4007BAD12 /* BHCSCube.h */,
+				D4AD357718C229A5007BAD12 /* BHCSCube.m */,
+				D4AD357818C229A5007BAD12 /* BHCSModelNode.h */,
+				D4AD357918C229A5007BAD12 /* BHCSModelNode.m */,
+				D4AD357A18C229A5007BAD12 /* BHCSScene.h */,
+				D4AD357B18C229A5007BAD12 /* BHCSScene.m */,
+				D4AD358E18C267D1007BAD12 /* BHCSPieceNode.h */,
+				D4AD358F18C267D1007BAD12 /* BHCSPieceNode.m */,
+				D4AD359118C27211007BAD12 /* BHCSWorldNode.h */,
+				D4AD359218C27211007BAD12 /* BHCSWorldNode.m */,
+			);
+			path = Nodes;
+			sourceTree = "<group>";
+		};
+		D4AD35CB18C3BF34007BAD12 /* OSX */ = {
+			isa = PBXGroup;
+			children = (
+				D4AD35CC18C3BF34007BAD12 /* BHCSAppDelegate.h */,
+				D4AD35CD18C3BF34007BAD12 /* BHCSAppDelegate.m */,
+				D4AD35CE18C3BF34007BAD12 /* BHCSView.h */,
+				D4AD35CF18C3BF34007BAD12 /* BHCSView.m */,
+				D4AD35DC18C4E930007BAD12 /* BHCSPuzzleDocument.h */,
+				D4AD35DD18C4E931007BAD12 /* BHCSPuzzleDocument.m */,
+				D4AD35DF18C4EC9E007BAD12 /* BHCSPuzzleDocument.xib */,
+				D4AD35D818C3BF48007BAD12 /* MainMenu.xib */,
+				D4AD35D018C3BF34007BAD12 /* BHCubeSolver-Info.plist */,
+				D4AD35D118C3BF34007BAD12 /* lighting.fsh */,
+				D4AD35D218C3BF34007BAD12 /* lighting.vsh */,
+			);
+			path = OSX;
+			sourceTree = "<group>";
+		};
+		D4D4E3061C7D30CA0050B3B2 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				D4D4E3071C7D30CA0050B3B2 /* BHGL.h */,
+				D4D4E3081C7D30CA0050B3B2 /* BHGLAnimatedObject.h */,
+				D4D4E3091C7D30CA0050B3B2 /* BHGLAnimatedObject.m */,
+				D4D4E30A1C7D30CA0050B3B2 /* BHGLAnimation.h */,
+				D4D4E30B1C7D30CA0050B3B2 /* BHGLAnimation.m */,
+				D4D4E30C1C7D30CA0050B3B2 /* BHGLBasicAnimation.h */,
+				D4D4E30D1C7D30CA0050B3B2 /* BHGLBasicAnimation.m */,
+				D4D4E30E1C7D30CA0050B3B2 /* BHGLCamera.h */,
+				D4D4E30F1C7D30CA0050B3B2 /* BHGLCamera.m */,
+				D4D4E3101C7D30CA0050B3B2 /* BHGLCUtils.c */,
+				D4D4E3111C7D30CA0050B3B2 /* BHGLCUtils.h */,
+				D4D4E3121C7D30CA0050B3B2 /* BHGLKeyframeAnimation.h */,
+				D4D4E3131C7D30CA0050B3B2 /* BHGLKeyframeAnimation.m */,
+				D4D4E3141C7D30CA0050B3B2 /* BHGLLight.h */,
+				D4D4E3151C7D30CA0050B3B2 /* BHGLLight.m */,
+				D4D4E3161C7D30CA0050B3B2 /* BHGLMaterial.h */,
+				D4D4E3171C7D30CA0050B3B2 /* BHGLMaterial.m */,
+				D4D4E3181C7D30CA0050B3B2 /* BHGLMath.h */,
+				D4D4E3191C7D30CA0050B3B2 /* BHGLMesh.h */,
+				D4D4E31A1C7D30CA0050B3B2 /* BHGLMesh.m */,
+				D4D4E31B1C7D30CA0050B3B2 /* BHGLModelNode.h */,
+				D4D4E31C1C7D30CA0050B3B2 /* BHGLModelNode.m */,
+				D4D4E31D1C7D30CA0050B3B2 /* BHGLNode.h */,
+				D4D4E31E1C7D30CA0050B3B2 /* BHGLNode.m */,
+				D4D4E31F1C7D30CA0050B3B2 /* BHGLProgram.h */,
+				D4D4E3201C7D30CA0050B3B2 /* BHGLProgram.m */,
+				D4D4E3211C7D30CA0050B3B2 /* BHGLRenderedObject.h */,
+				D4D4E3221C7D30CA0050B3B2 /* BHGLScene.h */,
+				D4D4E3231C7D30CA0050B3B2 /* BHGLScene.m */,
+				D4D4E3241C7D30CA0050B3B2 /* BHGLTextNode.h */,
+				D4D4E3251C7D30CA0050B3B2 /* BHGLTextNode.m */,
+				D4D4E3261C7D30CA0050B3B2 /* BHGLTexture.h */,
+				D4D4E3271C7D30CA0050B3B2 /* BHGLTexture.m */,
+				D4D4E3281C7D30CA0050B3B2 /* BHGLTypes.h */,
+				D4D4E32C1C7D30CA0050B3B2 /* OSX */,
+			);
+			name = Classes;
+			path = External/BHGL/Classes;
+			sourceTree = "<group>";
+		};
+		D4D4E32C1C7D30CA0050B3B2 /* OSX */ = {
+			isa = PBXGroup;
+			children = (
+				D4D4E32D1C7D30CA0050B3B2 /* BHGLView.h */,
+				D4D4E32E1C7D30CA0050B3B2 /* BHGLView.m */,
+			);
+			path = OSX;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		D4AD34D718C17C8A007BAD12 /* BHCubeSolver */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D4AD350918C17C8A007BAD12 /* Build configuration list for PBXNativeTarget "BHCubeSolver" */;
+			buildPhases = (
+				D4AD34D418C17C8A007BAD12 /* Sources */,
+				D4AD34D518C17C8A007BAD12 /* Frameworks */,
+				D4AD34D618C17C8A007BAD12 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = BHCubeSolver;
+			productName = BHCubeSolver;
+			productReference = D4AD34D818C17C8A007BAD12 /* BHCubeSolver.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D4AD34D018C17C8A007BAD12 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = BHCS;
+				LastUpgradeCheck = 0720;
+				ORGANIZATIONNAME = "Brockenhaus Studio";
+				TargetAttributes = {
+					D4AD34D718C17C8A007BAD12 = {
+						DevelopmentTeam = AUA6KJ73CP;
+					};
+				};
+			};
+			buildConfigurationList = D4AD34D318C17C8A007BAD12 /* Build configuration list for PBXProject "BHCubeSolver" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = D4AD34CF18C17C8A007BAD12;
+			productRefGroup = D4AD34D918C17C8A007BAD12 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				D4AD34D718C17C8A007BAD12 /* BHCubeSolver */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		D4AD34D618C17C8A007BAD12 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D4AD35E018C4EC9E007BAD12 /* BHCSPuzzleDocument.xib in Resources */,
+				D4AD35DA18C4E349007BAD12 /* lighting.fsh in Resources */,
+				D4AD35DB18C4E349007BAD12 /* lighting.vsh in Resources */,
+				D4AD35D918C3BF48007BAD12 /* MainMenu.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		D4AD34D418C17C8A007BAD12 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D4AD35DE18C4E931007BAD12 /* BHCSPuzzleDocument.m in Sources */,
+				D4AD357C18C229A5007BAD12 /* BHCSCube.m in Sources */,
+				D4D4E3351C7D30CA0050B3B2 /* BHGLLight.m in Sources */,
+				D4AD357D18C229A5007BAD12 /* BHCSModelNode.m in Sources */,
+				D4AD359318C27211007BAD12 /* BHCSWorldNode.m in Sources */,
+				D4D4E3361C7D30CA0050B3B2 /* BHGLMaterial.m in Sources */,
+				D4D4E3381C7D30CA0050B3B2 /* BHGLModelNode.m in Sources */,
+				D4D4E33A1C7D30CA0050B3B2 /* BHGLProgram.m in Sources */,
+				D4AD359018C267D1007BAD12 /* BHCSPieceNode.m in Sources */,
+				D4AD35D418C3BF34007BAD12 /* BHCSView.m in Sources */,
+				D4D4E33D1C7D30CA0050B3B2 /* BHGLTexture.m in Sources */,
+				D4AD35D318C3BF34007BAD12 /* BHCSAppDelegate.m in Sources */,
+				D4D4E3301C7D30CA0050B3B2 /* BHGLAnimation.m in Sources */,
+				D4AD35CA18C3AA55007BAD12 /* BHCSAlgorithmXMatrix.m in Sources */,
+				D4D4E3321C7D30CA0050B3B2 /* BHGLCamera.m in Sources */,
+				D4AD358A18C24A6A007BAD12 /* BHCSCubeArray.m in Sources */,
+				D4AD34E818C17C8A007BAD12 /* main.m in Sources */,
+				D4AD357E18C229A5007BAD12 /* BHCSScene.m in Sources */,
+				D4D4E33F1C7D30CA0050B3B2 /* BHGLView.m in Sources */,
+				D4D4E33C1C7D30CA0050B3B2 /* BHGLTextNode.m in Sources */,
+				D4AD358718C24A17007BAD12 /* BHCSWorld.m in Sources */,
+				D4D4E3371C7D30CA0050B3B2 /* BHGLMesh.m in Sources */,
+				D4D4E33B1C7D30CA0050B3B2 /* BHGLScene.m in Sources */,
+				D4ECD20318CE32990003317E /* BHDancingLinks.c in Sources */,
+				D4AD356D18C18EC2007BAD12 /* BHCSPiece.m in Sources */,
+				D4D4E3311C7D30CA0050B3B2 /* BHGLBasicAnimation.m in Sources */,
+				D4D4E3331C7D30CA0050B3B2 /* BHGLCUtils.c in Sources */,
+				D4D4E32F1C7D30CA0050B3B2 /* BHGLAnimatedObject.m in Sources */,
+				D4D4E3341C7D30CA0050B3B2 /* BHGLKeyframeAnimation.m in Sources */,
+				D4D4E3391C7D30CA0050B3B2 /* BHGLNode.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		D4AD350718C17C8A007BAD12 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.8;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		D4AD350818C17C8A007BAD12 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.8;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		D4AD350A18C17C8A007BAD12 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "BHCubeSolver/BHCubeSolver-Prefix.pch";
+				INFOPLIST_FILE = "$(SRCROOT)/BHCubeSolver/OSX/BHCubeSolver-Info.plist";
+				MACOSX_DEPLOYMENT_TARGET = 10.9;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.brockenhaus-studio.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		D4AD350B18C17C8A007BAD12 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "BHCubeSolver/BHCubeSolver-Prefix.pch";
+				INFOPLIST_FILE = "$(SRCROOT)/BHCubeSolver/OSX/BHCubeSolver-Info.plist";
+				MACOSX_DEPLOYMENT_TARGET = 10.9;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.brockenhaus-studio.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		D4AD34D318C17C8A007BAD12 /* Build configuration list for PBXProject "BHCubeSolver" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D4AD350718C17C8A007BAD12 /* Debug */,
+				D4AD350818C17C8A007BAD12 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D4AD350918C17C8A007BAD12 /* Build configuration list for PBXNativeTarget "BHCubeSolver" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D4AD350A18C17C8A007BAD12 /* Debug */,
+				D4AD350B18C17C8A007BAD12 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D4AD34D018C17C8A007BAD12 /* Project object */;
+}

@@ -1,0 +1,3 @@
+[submodule "BHCubeSolver/External/BHGL"]
+	path = BHCubeSolver/External/BHGL
+	url = https://github.com/jvisenti/BHGL.git

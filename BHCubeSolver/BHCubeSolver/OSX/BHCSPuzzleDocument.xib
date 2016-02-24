@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.Cocoa.XIB" version="3.0" toolsVersion="4514" systemVersion="13A603" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none">
+    <dependencies>
+        <deployment defaultVersion="1080" identifier="macosx"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="4514"/>
+    </dependencies>
+    <objects>
+        <customObject id="-2" userLabel="File's Owner" customClass="BHCSPuzzleDocument">
+            <connections>
+                <outlet property="window" destination="P98-XE-GaU" id="Eay-7g-Z9Y"/>
+            </connections>
+        </customObject>
+        <customObject id="-1" userLabel="First Responder" customClass="FirstResponder"/>
+        <customObject id="-3" userLabel="Application"/>
+        <window title="BHCubeSolver" allowsToolTipsWhenApplicationIsInactive="NO" autorecalculatesKeyViewLoop="NO" oneShot="NO" releasedWhenClosed="NO" animationBehavior="default" id="P98-XE-GaU">
+            <windowStyleMask key="styleMask" titled="YES" closable="YES" miniaturizable="YES" resizable="YES"/>
+            <rect key="contentRect" x="549" y="135" width="800" height="800"/>
+            <rect key="screenRect" x="0.0" y="0.0" width="1920" height="1058"/>
+            <value key="minSize" type="size" width="405" height="405"/>
+            <view key="contentView" id="hHs-ao-F2o">
+                <rect key="frame" x="0.0" y="0.0" width="800" height="800"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <openGLView useAuxiliaryDepthBufferStencil="NO" allowOffline="YES" id="AYU-jZ-PAX" customClass="BHCSView">
+                        <rect key="frame" x="0.0" y="20" width="800" height="780"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <connections>
+                            <outlet property="bruteButton" destination="pwa-KB-f2l" id="2De-75-r1Q"/>
+                            <outlet property="improvedButton" destination="zXv-pU-EPg" id="b4U-RZ-jzn"/>
+                            <outlet property="unpackButton" destination="kwp-Gv-xVG" id="DVp-Yi-jog"/>
+                        </connections>
+                    </openGLView>
+                    <customView id="YQa-jd-4tb">
+                        <rect key="frame" x="20" y="0.0" width="288" height="20"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <button verticalHuggingPriority="750" id="zXv-pU-EPg">
+                                <rect key="frame" x="144" y="-7" width="150" height="32"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <buttonCell key="cell" type="push" title="Solve Improved" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="5Pc-Lb-wFb">
+                                    <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                                    <font key="font" metaFont="system"/>
+                                </buttonCell>
+                                <connections>
+                                    <action selector="solveImproved:" target="AYU-jZ-PAX" id="SF0-Bb-5BG"/>
+                                </connections>
+                            </button>
+                            <button verticalHuggingPriority="750" id="pwa-KB-f2l">
+                                <rect key="frame" x="-6" y="-7" width="150" height="32"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxY="YES"/>
+                                <buttonCell key="cell" type="push" title="Solve Brute Force" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="mP8-bt-YGJ">
+                                    <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                                    <font key="font" metaFont="system"/>
+                                </buttonCell>
+                                <connections>
+                                    <action selector="solveBrute:" target="AYU-jZ-PAX" id="l7I-Qr-3AQ"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                    </customView>
+                    <button verticalHuggingPriority="750" id="kwp-Gv-xVG">
+                        <rect key="frame" x="711" y="-7" width="75" height="32"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxY="YES"/>
+                        <buttonCell key="cell" type="push" title="Unpack" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="TJE-h4-OLJ">
+                            <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                            <font key="font" metaFont="system"/>
+                        </buttonCell>
+                        <connections>
+                            <action selector="togglePacked:" target="AYU-jZ-PAX" id="0Po-LO-C4Y"/>
+                        </connections>
+                    </button>
+                </subviews>
+            </view>
+            <connections>
+                <outlet property="delegate" destination="-2" id="bVi-Ha-9Bt"/>
+            </connections>
+        </window>
+        <userDefaultsController id="1Le-4a-y3r"/>
+    </objects>
+</document>
